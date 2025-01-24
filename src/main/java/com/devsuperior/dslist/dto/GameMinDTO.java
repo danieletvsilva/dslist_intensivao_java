@@ -9,9 +9,7 @@ public class GameMinDTO {
 	private String title;
 	private Integer year;
 	private String imgUrl;
-	private String shortDescription;
-	
-	
+	private String shortDescription;	
 	
 	public GameMinDTO() {
 	}
@@ -27,7 +25,7 @@ public class GameMinDTO {
 	public GameMinDTO(GameMinProjection projection) {
 		id = projection.getId();
 		title = projection.getTitle();
-		year = projection.getYear();
+		year = projection.getGameYear();
 		imgUrl = projection.getImgUrl();
 		shortDescription = projection.getShortDescription();
 	}
@@ -50,9 +48,7 @@ public class GameMinDTO {
 
 	public String getShortDescription() {
 		return shortDescription;
-	}
-	
-	
+	}	
 }
 	
 
